@@ -44,12 +44,13 @@
 </head>
 
 <body id="page-top">
-
-    <!-- Navigation -->
+    
+    <!-- Navigation: THIS SHOULD BE ADDED TO DEFAULT TEMPLATE -->
     <nav class="navbar fixed-top navbar-toggleable-md navbar-light" id="mainNav">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+        
         <div class="container">
             <a class="navbar-brand" href="#page-top">
                 <img src = "https://raw.githubusercontent.com/BU-Spark/spark-website/master/img/sparklogo.png" style="width:42px;height:42px;border:0;">
@@ -79,7 +80,7 @@
     <header class="masthead">
         <div class="header-content">
             <div class="header-content-inner">
-                <h1 id="homeHeading">Entrepreneurs were made not born</h1>
+                <h1 id="homeHeading">Entrepreneurs are made, not born</h1>
                     <p>BU Spark! is an initiative to support student driven innovation and entrepreneurship in computer science and computer engineering, and related disciplines.</p>
                     <!-- <a class="btn btn-primary btn-xl" href="#about">Find Out More</a> -->
                 </div>
@@ -89,13 +90,11 @@
     <section class="bg-primary" id="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 offset-lg-2 text-center">
-                    <!--<h2 class="section-heading text-white">We've got what you need!</h2>
-                    <hr class="light">-->
-                     <img class="img-fluid" width = 400px height = 100px align = left src = "../img/sub_about.jpg">
+                <div class="text-center">
+                    <img class="img-fluid" width="400px" height="100px" align="left" src="../img/sub_about.jpg">
                     <hr>
-                    <div class = "description_right">
-                        <p class="text-faded">BU Spark! is an initiative to support student driven innovation in technology. Housed at Boston University’s Hariri Institute for Computing, BU Spark! aims to helps students realize their technical potential by providing access to resources, knowledge, and expert networks to support their product innovation journey.</p>
+                    <div class="col-sm-6 description_right">
+                        <p>BU Spark! is an initiative to support student driven innovation in technology. Housed at Boston University’s Hariri Institute for Computing, BU Spark! aims to helps students realize their technical potential by providing access to resources, knowledge, and expert networks to support their product innovation journey.</p>
                         <!--<a class="btn btn-default btn-xl sr-button" href="#services">Get Started!</a> -->
                     </div>
                 </div>
@@ -103,34 +102,52 @@
         </div>
     </section>
     
-    <section class="bg-dark" id="about">
-        <div class="container">
+    <!-- ICONS: Placeholder icons from Flaticon -->
+    <div class="call-to-action bg-dark">
+        <div class="container text-center">
             <div class="row">
-                <div class="col-lg-8 offset-lg-2 text-center">
-                    <!--<h2 class="section-heading text-white">We've got what you need!</h2>
-                    <hr class="light">-->
-                    <p class="text-faded"> Here is a short paragraph about BU Spark!</p>
-                    <!--<a class="btn btn-default btn-xl sr-button" href="#services">Get Started!</a> -->
+                <div class="col-sm-3">
+                    <img class="img-fluid" src = "../img/flaticon_samples/004-light-bulb-outline.png" style="width:256px;height:256px;">
+                </div>
+                <div class="col-sm-3">
+                    <img class="img-fluid" src = "../img/flaticon_samples/003-circuit.png" style="width:256px;height:256px;">
+                </div>
+                <div class="col-sm-3">
+                    <img class="img-fluid" src = "../img/flaticon_samples/002-open-book.png" style="width:256px;height:256px;">
+                </div>
+                <div class="col-sm-3">
+                    <img class="img-fluid" src = "../img/flaticon_samples/001-simple-avatar.png" style="width:256px;height:256px;">
                 </div>
             </div>
         </div>
+    </div>
+    
+    <!-- INSERT FLOWCHART (image?) -->
+    <section class="bg-primary">
+        <h1>Flowchart image goes here</h1>
     </section>
+    
     <section class="bg-primary" id="about">
         <div class="container">
-            <div class = row>
+            <div class="row">
                     <!--<h2 class="section-heading text-white">We've got what you need!</h2>
                     <hr class="light">-->
-                        <h2>IGNITE YOUR INNOVATION</h2>
-                    <div class="offering_container">
-                        <div class="container left">
-                            <strong>/BU Spark! Fellowship/</strong>
-                                <p>Do you want to pursue a project of your own? If so, BU Spark! Fellowship could help you and your team jumpstart the development of your ideas. The program aims to provide you with a collaborative coworking space, access to mentors, and skill building to help ignite your ideas.</p>
-                        </div>
-                        <div class="container right">
-                            <strong>/BU Spark! Fellowship/</strong>
-                                <p>Do you want to pursue a project of your own? If so, BU Spark! Fellowship could help you and your team jumpstart the development of your ideas. The program aims to provide you with a collaborative coworking space, access to mentors, and skill building to help ignite your ideas.</p>
-                        </div>
+                <h2>CREATE A TECHNOVATION</h2>
+                <br>
+                <br>
+                <br>
+                
+                <div class="row">
+                    <!-- Uses padded_container which adds left and right padding -->
+                    <div class="padded_container left col-sm-6">
+                        <strong>/ BU Spark! Fellowship /</strong>
+                            <p>Do you want to pursue a project of your own? If so, BU Spark! Fellowship could help you and your team jumpstart the development of your ideas. The program aims to provide you with a collaborative coworking space, access to mentors, and skill building to help ignite your ideas.</p>
                     </div>
+                    <div class="padded_container right col-sm-6">
+                        <strong>/ BU Innovation Ventures /</strong>
+                            <p>Do you want to start your own project, but can't balance with your course load? The CS492 BU Spark! Innovation Ventures class, will walk you through the steps needed to build a technical product in one semester. The program aims to provide you with a collaborative coworking space, access to mentors, and skill building to help ignite your ideas.</p>
+                    </div>
+                </div>
             </div> 
         </div>
     </section>
@@ -153,18 +170,25 @@
     
     <section class="bg-primary" id="about">
         <div class="container">
-            <div class = row>
+            <div class="row">
                     <!--<h2 class="section-heading text-white">We've got what you need!</h2>
                     <hr class="light">-->
-                        <h2>IGNITE YOUR INNOVATION</h2>
-                    <div class="offering_container">
-                        <div class="container left">
-                            <strong>/BU Spark! Fellowship/</strong>
-                                <p>Do you want to pursue a project of your own? If so, BU Spark! Fellowship could help you and your team jumpstart the development of your ideas. The program aims to provide you with a collaborative coworking space, access to mentors, and skill building to help ignite your ideas.</p>
+                    <h2>PURSUE AN INNOVATION</h2>
+                    <br>
+                    <br>
+                    <br>
+
+                    <div class="row">
+                        <!-- Uses padded_container which adds left and right padding -->
+                        <div class="padded_container left col-sm-6">
+                            <strong>/ The Spark! X-Lab /</strong>
+                                <p>The Spark! X-Lab, or experiential learning program, will provide you the opportunity to work on a real-world project sponsored by a company, start-up, non-profit, or other organization. In Spring 2017, we are offering this opportunity for students enrolled in CS506 Data Science, CS542 Machine Learning, and CE's Android App Development. This will allow you to use work on a Spark! X-Lab project that will also satisfy your class project’s requirements.
+                                </p>
                         </div>
-                        <div class="container right">
-                            <strong>/BU Spark! Fellowship/</strong>
-                                <p>Do you want to pursue a project of your own? If so, BU Spark! Fellowship could help you and your team jumpstart the development of your ideas. The program aims to provide you with a collaborative coworking space, access to mentors, and skill building to help ignite your ideas.</p>
+                        
+                        <div class="padded_container right col-sm-6">
+                            <strong>/ Other BU Spark! Program /</strong>
+                                <p>Description Here</p>
                         </div>
                     </div>
             </div> 
@@ -186,24 +210,37 @@
             </div>
         </div>
     </div>
+    
+    <h1> EVERYTHING UNDER HERE SHOULD BE ADDED TO DEFAULT TEMPLATE FOOTER </h1>
 
     <section id="contact">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 offset-lg-2 text-center">
+                <div class="col-sm-12">
                     <img class="img-fluid" width = 100px height = 100px align = left src = "../img/Twitter_bird_logo_2012.svg.png">
                     <img class="img-fluid" width = 100px height = 100px align = left src = "../img/facebook-icon-preview-1-400x400.png">
                 </div>
-                <div class="col-lg-4 offset-lg-2 text-center">
+            </div>
+            
+            <div class="row">
+                <div class="col-sm-12 text-left">
                     <p>Email: buspark@bu.edu</p>
                 </div>
-                <div class="col-lg-4 text-center">
+                <div class="col-sm-12 text-left">
                     <p>Phone: 703-408-0062</p>
                 </div>
-                <div class="col-lg-8 offset-lg-2 text-center">
+            </div>
+            
+            <br>
+            <h1>Add subscription form here</h1>
+            <br>
+            
+            <!-- Another row underneath subscription form-->
+            <div class="row">
+                <div class="col-sm-12">
                     <p>Address: 111 Cummington Mall, Boston, MA 02215</p>
                 </div>
-                <div class="col-lg-8 offset-lg-2 text-center">
+                <div class="col-sm-12">
                     <p>Subscribe our newsletter and keep up to date</p>
                 </div>
             </div>
@@ -235,7 +272,7 @@
                     <li>Spark! In Residence</li>
                     <li>Ignite Student Council</li>
                     <li>Technical Experts (SAIL)</li>
-                    <li>Entrepreneu in Residence</li>
+                    <li>Entrepreneurs in Residence</li>
                 </ul>
             </div>
             <div class="container middle">
