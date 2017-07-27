@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>BU Spark!</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap-pure.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap-grid.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/creative.min.css" rel="stylesheet">
+    
+    <!--  Custom Styles for real now  -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Temporary navbar container fix -->
+    <style>
+    .navbar-toggler {
+        z-index: 1;
+    }
+    
+    @media (max-width: 576px) {
+        nav > .container {
+            width: 100%;
+        }
+    }
+    </style>
+
+</head>
+<div ui-view class = "main ng-scope">
+<body id="page-top">
+    <style type "text/css" class = "ng-binding ng-scope">
+        @import url(https://fonts.googleapis.com/css?family=Raleway);
+        #cssmenu,
+        #cssmenu ul,
+        #cssmenu ul li,
+        #cssmenu ul li a {
+          margin: 0;
+          padding: 0;
+          border: 0;
+          list-style: none;
+          line-height: 1;
+          display: block;
+          position: relative;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+        }
+        #cssmenu:after,
+        #cssmenu > ul:after {
+          content: ".";
+          display: block;
+          clear: both;
+          visibility: hidden;
+          line-height: 0;
+          height: 0;
+        }
+        #cssmenu {
+          width: auto;
+          border-bottom: 3px solid #7a4068;
+          font-family: Raleway, sans-serif;
+          line-height: 1;
+        }
+        #cssmenu ul {
+          background: #ffffff;
+        }
+        #cssmenu > ul > li {
+          float: left;
+        }
+        #cssmenu.align-center > ul {
+          font-size: 0;
+          text-align: center;
+        }
+        #cssmenu.align-center > ul > li {
+          display: inline-block;
+          float: none;
+        }
+        #cssmenu.align-right > ul > li {
+          float: right;
+        }
+        #cssmenu.align-right > ul > li > a {
+          margin-right: 0;
+          margin-left: -4px;
+        }
+        #cssmenu > ul > li > a {
+          z-index: 2;
+          padding: 18px 25px 12px 25px;
+          font-size: 15px;
+          font-weight: 400;
+          text-decoration: none;
+          color: #444444;
+          -webkit-transition: all .2s ease;
+          -moz-transition: all .2s ease;
+          -ms-transition: all .2s ease;
+          -o-transition: all .2s ease;
+          transition: all .2s ease;
+          margin-right: -4px;
+        }
+        #cssmenu > ul > li.active > a,
+        #cssmenu > ul > li:hover > a,
+        #cssmenu > ul > li > a:hover {
+          color: #ffffff;
+        }
+        #cssmenu > ul > li > a:after {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          z-index: -1;
+          width: 100%;
+          height: 120%;
+          border-top-left-radius: 8px;
+          border-top-right-radius: 8px;
+          content: "";
+          -webkit-transition: all .2s ease;
+          -o-transition: all .2s ease;
+          transition: all .2s ease;
+          -webkit-transform: perspective(5px) rotateX(2deg);
+          -webkit-transform-origin: bottom;
+          -moz-transform: perspective(5px) rotateX(2deg);
+          -moz-transform-origin: bottom;
+          transform: perspective(5px) rotateX(2deg);
+          transform-origin: bottom;
+        }
+        #cssmenu > ul > li.active > a:after,
+        #cssmenu > ul > li:hover > a:after,
+        #cssmenu > ul > li > a:hover:after {
+          background: #7a4068;
+        }
+        </style>
+    </div>
+    
+    <!-- Navigation: THIS SHOULD BE ADDED TO DEFAULT TEMPLATE -->
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-light" id="mainNav">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="container">
+            <a class="navbar-brand" href="#page-top">
+                <img src = "https://raw.githubusercontent.com/BU-Spark/spark-website/master/img/sparklogo.png" style="width:42px;height:42px;border:0;">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarExample">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Partners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">News/Events</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <header class="masthead">
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading">Fuel your spark!</h1>
+                    <p>BU spark! offers a variety of resources to our community of innovators, such as conference and coworking spaces as well as one-on-one mentorship
+                    </p>
+                    
+                    <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
+                </div>
+            </div>
+    </header>
+    
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <h2>TOOLS TO INNOVATE</h2>
+                <div class="row">
+                    <div class = "col-md-12">
+                        <div id="cssmenu">
+                        <ul>
+                            <li class = "active">
+                                <a href = "bu.edu/spark/roomreservation.html" target = "_blank">Room Reservation</a>
+                            </li>
+                            <li class = "">
+                                <a href = "bu.edu/spark/lockrental" target = "">Locker Rental</a>
+                            </li>
+                            <li class = "">
+                                <a href = "bu.edu/spark/lockrental" target = "">Request a Mentor</a>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+    
+    <section>
+        <div class="container">
+            <div class="row">
+                <h3>Spark! Collaboratory</h3>
+                <p>Get to know our community of innovators et to know our community of innovatorset to know our community of innovatorset to know our community of innovatorset to know our community of innovatorset to know our community of innovatorset to know our community of innovatorset to know our community of innovators</p>
+
+                <h3>Spark! Innovaor Co-Working Space</h3>
+                <p>Get to know our community of innovators et to know our community of innovatorset to know our community of innovatorset to know our community of innovatorset to know our community of innovatorset to know our community of innovatorset to know our community of innovatorset to know our community of innovators</p>
+
+                <h3>Spark! Conference Room</h3>
+                <p>Get to know our community of innovators et to know our community of innovatorset to know our community of innovatorset to know our community of innovatorset to know our community of innovatorset to know our community of innovatorset to know our community of innovatorset to know our community of innovators</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <img class="img-fluid" width="100px" height="100px" align="left" alt="twitter_icon" src="https://github.com/BU-Spark/spark-website/blob/master/img/Twitter_bird_logo_2012.svg.png?raw=true">
+                    <img class="img-fluid" width="100px" height="100px" align="left" alt="facebook icon" src="https://github.com/BU-Spark/spark-website/blob/master/img/facebook-icon-preview-1-400x400.png?raw=true">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-sm-12 text-left">
+                    <p>Email: buspark@bu.edu</p>
+                </div>
+                <div class="col-sm-12 text-left">
+                    <p>Phone: 703-408-0062</p>
+                </div>
+            </div>
+            
+            <br>
+            <h1>Add subscription form here</h1>
+            <br>
+            
+            <!-- Another row underneath subscription form-->
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>Address: 111 Cummington Mall, Boston, MA 02215</p>
+                </div>
+                <div class="col-sm-12">
+                    <p>Subscribe our newsletter and keep up to date</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="call-to-action bg-dark">
+        
+        <div class="footer_container">
+            <div class="container left">
+                <strong>ABOUT</strong>
+                <ul>
+                    <li>Join a Technovation</li>
+                    <li>Pursue a Technovation</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="container middle">
+                <strong>PARTNERS</strong>
+                <ul>
+                    <li>Organizations</li>
+                    <li>Case Studies</li>
+                </ul>
+            </div>
+            <div class="container middle">
+                <strong>TEAM</strong>
+                <ul>
+                    <li>Spark! Staff</li>
+                    <li>Spark! In Residence</li>
+                    <li>Ignite Student Council</li>
+                    <li>Technical Experts (SAIL)</li>
+                    <li>Entrepreneurs in Residence</li>
+                </ul>
+            </div>
+            <div class="container middle">
+                <strong>RESOURCES</strong>
+                <ul>
+                    <li>Room Reservation</li>
+                    <li>Locker Rental</li>
+                    <li>Mentorship Program</li>
+                    <li>Request a Consultation</li>
+                </ul>
+            </div>
+            <div class="container middle">
+                <strong>NEWS/EVENTS</strong>
+                <ul>
+                    <li>Blog</li>
+                    <li>Newsletter</li>
+                    <li>Calendar</li>
+                </ul>
+            </div>
+        </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/tether/tether.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.min.js"></script>
+
+</body>
+
+</html>
