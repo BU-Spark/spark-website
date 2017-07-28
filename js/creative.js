@@ -69,3 +69,7 @@
     });
 
 })(jQuery); // End of use strict
+$(".linkStyle").click(function() {    
+   $('.linkStyle.active').removeClass('active');
+   $(this).addClass('hover');   
+ });
