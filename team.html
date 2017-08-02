@@ -1,7 +1,3 @@
----
-layout: default
-title: Index
----
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,7 +18,7 @@ title: Index
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-
+    
     <!--About Page Scripts-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/tether/tether.min.js"></script>
@@ -33,7 +29,7 @@ title: Index
 
     <!-- Custom styles for this template -->
     <link href="css/creative.min.css" rel="stylesheet">
-
+    
     <!--  Custom Styles for real now  -->
     <link href="css/style.css" rel="stylesheet">
 
@@ -42,7 +38,7 @@ title: Index
     .navbar-toggler {
         z-index: 1;
     }
-
+    
     @media (max-width: 576px) {
         nav > .container {
             width: 100%;
@@ -91,11 +87,11 @@ title: Index
         background-color:black;
         color: white;
         font-family:monospace;
-
+        
     }
 
     /* Add Animation */
-    .modal-content, #caption {
+    .modal-content, #caption {    
         -webkit-animation-name: zoom;
         -webkit-animation-duration: 0.6s;
         animation-name: zoom;
@@ -103,12 +99,12 @@ title: Index
     }
 
     @-webkit-keyframes zoom {
-        from {-webkit-transform:scale(0)}
+        from {-webkit-transform:scale(0)} 
         to {-webkit-transform:scale(1)}
     }
 
     @keyframes zoom {
-        from {transform:scale(0)}
+        from {transform:scale(0)} 
         to {transform:scale(1)}
     }
 
@@ -122,12 +118,12 @@ title: Index
         font-weight: bold;
         transition: 0.3s;
     }
-
+    
     img#facebook{
         margin:10px;
         }
     img#instagram{
-        margin:10px;
+        margin:10px;  
         }
     img#github{
         margin:10px;
@@ -149,12 +145,10 @@ title: Index
         }
     }
         </style>
-
+    
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-
-    <body>
 
     <!-- Navigation: THIS SHOULD BE ADDED TO DEFAULT TEMPLATE -->
     <nav class="navbar fixed-top navbar-toggleable-md navbar-light" id="mainNav">
@@ -197,139 +191,148 @@ title: Index
         </div>
     </nav>
 
-    <header class="masthead">
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1 id="homeHeading">Entrepreneurs are made, not born</h1>
-                    <p>BU Spark! is an initiative to support student driven innovation and entrepreneurship in computer science and computer engineering, and related disciplines.
-                    </p>
+            <header class="masthead">
+                <div class="header-content">
+                    <div class="header-content-inner">
+                        <h1 id="homeHeading">Meet the Team!</h1>
+                            <p>BU spark! is a diverse group of hispsters, hackers, and hustlers. Meet us. 
+                            </p>
 
-                    <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
-                </div>
-            </div>
-    </header>
-
-    <section class="bg-primary" id="about3">
-        <div class="container">
-            <div class="row">
-                <div class="text-center">
-                    <img class="img-fluid" width="700px" height="500px" align="left" alt="sub_about" src="img/sub_about.jpg">
-                    <hr>
-                    <div class="col-sm-6 description_right">
-                        <p style = "text-align: left; padding-left: 50%;">BU Spark! is an initiative to support student driven innovation in technology. Housed at Boston University’s Hariri Institute for Computing, BU Spark! aims to helps students realize their technical potential by providing access to resources, knowledge, and expert networks to support their product innovation journey.</p>
+                            <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
+                        </div>
                     </div>
+            </header>
+    <!--Begin Header-->
+        <div class="container">
+            <div class = "resource">
+                <!--<h2>Community of Innovators</h2
+                <p style = "padding:10px; text-align: left;">Join our community description</p>>-->
+              <ul class="nav nav-tabs">
+                <li class="active"><a href="#home" id="focus">Spark! Staff</a></li>
+                <li><a href="#menu1">Spark! In Residence</a></li>
+                <li><a href="#menu2">Ignite Student Council</a></li>
+                <li><a href="#menu3">Innovators in Residence</a></li>
+              </ul>
+
+              <div class="tab-content">
+                <div id="home" class="tab-pane fade in active">
+ <!-- Navigation Content -->
+    <div class="container">
+
+        <!-- Introduction Row -->
+        <h1 class="my-4">About Us</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, explicabo dolores ipsam aliquam inventore corrupti eveniet quisquam quod totam laudantium repudiandae obcaecati ea consectetur debitis velit facere nisi expedita vel?</p>
+        <br>
+
+        <!-- Team Members Row -->
+        <div class="row">
+            <div class="col-lg-12">
+            </div>
+            <!--Person 1 Begin -->
+            <div class="col-lg-4 col-sm-6 text-center mb-4">
+                <img class="rounded-circle img-fluid d-block mx-auto" id = "myImg" src="img/fiona.jpg"  alt="Fiona is a Junior at Boston University studying advertising and computer science. She is currently the President & Founder of Girls Who Code BU, Vice President of the Global App Initiative and Boston University Representative for InnovateEDU. She is passionate about science, technology, communications and travel. Her dream job would combine her interests in science and technology and her passion for design and innovation with the goal of bettering communities around the world.">
+                <h3>Fiona Whittington
+                    <small>Head of Student Innovation</small>
+                </h3>
+            <!-- The Modal -->
+                <div id="myModal" class="modal">
+                  <span class="close">&times;</span>
+                  <img class="modal-content" id="img01">
+                  <div id="caption"></div>
+                    <img id= "facebook" src = "img/facebook_team_icon.gif" width = 70px height=70px>
+                    <img id= "instagram" src = "img/instagram_team_icon.gif" width = 70px height=70px>
+                    <img id= "github" src = "img/github_team_icon.png" width = 70px height=70px>
+                    <img id= "link" src = "img/link_team_icon.png" width = 60px height= 60px>
                 </div>
+
+                <script>
+                // Get the modal
+                var modal = document.getElementById('myModal');
+
+                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                var img = document.getElementById('myImg');
+                var modalImg = document.getElementById("img01");
+                var captionText = document.getElementById("caption");
+                var socialIcons = document.getElementById("facebook");
+                var socialIcons = document.getElementById("instagram");
+                var socialIcons = document.getElementById("github"); 
+                var socialIcons = document.getElementById("link"); 
+                img.onclick = function(){
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                    captionText.innerHTML = this.alt;
+                    modalImg.src = this.src;
+                    modalImg.src = this.src;
+                    modalImg.src = this.src;
+                    modalImg.src = this.src;
+                }
+
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() { 
+                    modal.style.display = "none";
+                }
+                </script>
+            
+                <!--<p>Description</p>-->
+            </div>
+            <!--Person 1 End -->
+            <div class="col-lg-4 col-sm-6 text-center mb-4">
+                <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/200x200" alt="">
+                <h3>Ziba Cranmer
+                    <small>Director</small>
+                </h3>
+                <!--<p>What does this team member to? Keep it short! This is also a great spot for social links!</p>-->
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center mb-4">
+                <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/200x200" alt="">
+                <h3>Lawrence Luo <br>
+                    <small>Technical Operations</small>
+                </h3>
+               <!-- <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>-->
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center mb-4">
+                <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/200x200" alt="">
+                <h3>Soren Rodriguez
+                    <small>Copy Writer</small>
+                </h3>
+               <!-- <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>-->
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center mb-4">
+                <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/200x200" alt="">
+                <h3>Shuang Wu
+                    <small>Graphic Designer</small>
+                </h3>
+               <!--<p>What does this team member to? Keep it short! This is also a great spot for social links!-->
             </div>
         </div>
-    </section>
 
+    </div>
+                </div>
+              <div id="menu1" class="tab-pane fade in active">
+                </div>
+                <div id="menu2" class="tab-pane fade">
+                </div>
+                <div id="menu3" class="tab-pane fade">
+                </div>
+              </div>
+            </div>
+        </div>
+
+<script>
+$(document).ready(function(){
+    $(".nav-tabs a").click(function(){
+        $(this).tab('show');
+    });
+});
+</script>
+                
+        <!-- end script for toggle menu-->
+    
     <!-- ICONS: Placeholder icons from Flaticon -->
-    <div class="call-to-action-break bg-dark">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-sm-3">
-                    <img class="img-fluid" alt="lightbulb" src="img/idea.png" style="width:140px;height:200px;">
-                </div>
-                <div class="col-sm-3">
-                    <img class="img-fluid" alt="circuit" src="img/connect_icon.png" style="width:200px;height:200px;">
-                </div>
-                <div class="col-sm-3">
-                    <img class="img-fluid" alt="openbook" src="img/people_icon.png" style="width:200px;height:200px;">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- INSERT FLOWCHART (image?)
-    <section class="bg-primary">
-        <h1>Flowchart image goes here</h1>
-    </section>
-    -->
-
-    <section class="bg-primary" id="about1">
-        <div class="container">
-            <div class="row">
-                    <!--<h2 class="section-heading text-white">We've got what you need!</h2>
-                    <hr class="light">-->
-                <h2>CREATE A TECHNOVATION</h2>
-                <br>
-                <br>
-                <br>
-
-                <div class="row">
-                    <!-- Uses padded_container which adds left and right padding -->
-                    <div class="padded_container left col-sm-6">
-                        <strong>/ BU Spark! Fellowship /</strong>
-                            <p>Do you want to pursue a project of your own? If so, BU Spark! Fellowship could help you and your team jumpstart the development of your ideas. The program aims to provide you with a collaborative coworking space, access to mentors, and skill building to help ignite your ideas.</p>
-                    </div>
-                    <div class="padded_container right col-sm-6">
-                        <strong>/ BU Innovation Ventures /</strong>
-                            <p>Do you want to start your own project, but can't balance with your course load? The CS492 BU Spark! Innovation Ventures class, will walk you through the steps needed to build a technical product in one semester. The program aims to provide you with a collaborative coworking space, access to mentors, and skill building to help ignite your ideas.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="call-to-action bg-dark">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-sm-4">
-                    <img class="img-fluid" alt="sub_about" src="https://github.com/BU-Spark/spark-website/blob/master/img/sub_about.jpg?raw=true">
-                </div>
-                <div class="col-sm-4">
-                    <img class="img-fluid" alt="sub_about" src="https://github.com/BU-Spark/spark-website/blob/master/img/sub_about.jpg?raw=true">
-                </div>
-                <div class="col-sm-4">
-                    <img class="img-fluid" alt="sub_about" src="https://github.com/BU-Spark/spark-website/blob/master/img/sub_about.jpg?raw=true">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <section class="bg-primary" id="about2">
-        <div class="container">
-            <div class="row">
-                    <!--<h2 class="section-heading text-white">We've got what you need!</h2>
-                    <hr class="light">-->
-                    <h2>PURSUE AN INNOVATION</h2>
-                    <br>
-                    <br>
-                    <br>
-
-                    <div class="row">
-                        <!-- Uses padded_container which adds left and right padding -->
-                        <div class="padded_container left col-sm-6">
-                            <strong>/ The Spark! X-Lab /</strong>
-                                <p>The Spark! X-Lab, or experiential learning program, will provide you the opportunity to work on a real-world project sponsored by a company, start-up, non-profit, or other organization. In Spring 2017, we are offering this opportunity for students enrolled in CS506 Data Science, CS542 Machine Learning, and CE's Android App Development. This will allow you to use work on a Spark! X-Lab project that will also satisfy your class project’s requirements.
-                                </p>
-                        </div>
-
-                        <div class="padded_container right col-sm-6">
-                            <strong>/ Other BU Spark! Program /</strong>
-                                <p>Description Here</p>
-                        </div>
-                    </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="call-to-action bg-dark">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-sm-4">
-                    <img class="img-fluid" alt="sub_about" src="https://github.com/BU-Spark/spark-website/blob/master/img/sub_about.jpg?raw=true">
-                </div>
-
-                <!-- Blank column for spacing -->
-                <div class="col-sm-4"></div>
-
-                <div class="col-sm-4">
-                    <img class="img-fluid" alt="sub_about" src="https://github.com/BU-Spark/spark-website/blob/master/img/sub_about.jpg?raw=true">
-                </div>
-            </div>
-        </div>
-    </div>
+    
    <!--FOOTER-->
     <section id="contact">
         <div class = "contact">
@@ -344,7 +347,7 @@ title: Index
                         <img width="60px" height="60px"  alt="facebook icon" src="img/facebook_team_icon.gif" width = 100px height = 100px;>
                     </div>
             </div>
-
+            
             <div class = "footer">
                 <div class="row">
                     <div class="col-sm-12 text-left">
@@ -370,9 +373,9 @@ title: Index
                             <div id="mc_embed_signup">
                             <form action="//www.us15.list-manage.com/subscribe/post?u=1a05e1e9821077a0ac6ff6b52&amp;id=9eee928d8b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                                 <div id="mc_embed_signup_scroll">
-
+                                    
                             <h3>Subscribe our newsletter and keep up to date</h3>
-
+                                    
                             <div class="mc-field-group">
                                 <label for="mce-EMAIL">Email Address </label>
                                 <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
@@ -396,12 +399,12 @@ title: Index
             </div>
         </div>
     </section>
-
-
+    
+    
     <div class="call-to-action bg-dark">
-
+        
         <div class="footer_container">
-
+            
             <div class="container left">
                 <strong>ABOUT</strong>
                 <ul>
@@ -444,9 +447,9 @@ title: Index
                     <li>Calendar</li>
                 </ul>
             </div>
-
+            
         </div>
-
+        
       </div>
 
     <!-- Bootstrap core JavaScript -->
@@ -461,10 +464,9 @@ title: Index
 
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
-
+    
     <!--Fiona Added-->
     <script src="js/creative.js"></script>
 
 </body>
 </html>
->>>>>>> ddbda900492edadbb44bc033767536f13bd81bc7
