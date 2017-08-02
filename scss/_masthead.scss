@@ -2,7 +2,7 @@
 header.masthead {
     position: relative;
     width: 100%;
-    min-height: auto;
+    height:60%;
     text-align: center;
     color: white;
     background-image: url(https://raw.githubusercontent.com/BU-Spark/spark-website/master/about.jpg);
@@ -11,6 +11,7 @@ header.masthead {
     .header-content {
         position: relative;
         width: 100%;
+        height: 60%;
         padding: 100px 15px 100px;
         text-align: center;
         .header-content-inner {

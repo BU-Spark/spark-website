@@ -67,9 +67,3 @@
             tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
         }
     });
-
-})(jQuery); // End of use strict
-$(".linkStyle").click(function() {    
-   $('.linkStyle.active').removeClass('active');
-   $(this).addClass('hover');   
- });

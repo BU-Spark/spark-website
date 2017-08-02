@@ -18,6 +18,11 @@
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    
+    <!--About Page Scripts-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/tether/tether.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Plugin CSS -->
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
@@ -39,40 +44,151 @@
             width: 100%;
         }
     }
-    </style>
+    #myImg {
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+        }
 
-</head>
+    #myImg:hover {opacity: 0.7;}
 
-<body id="page-top">
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    }
+
+    /* Modal Content (image) */
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+    }
+
+    /* Caption of Modal Image */
+    #caption {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        padding: 10px 0;
+        height: 150px;
+        background-color:black;
+        color: white;
+        font-family:monospace;
+        
+    }
+
+    /* Add Animation */
+    .modal-content, #caption {    
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+
+    @-webkit-keyframes zoom {
+        from {-webkit-transform:scale(0)} 
+        to {-webkit-transform:scale(1)}
+    }
+
+    @keyframes zoom {
+        from {transform:scale(0)} 
+        to {transform:scale(1)}
+    }
+
+    /* The Close Button */
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
     
+    img#facebook{
+        margin:10px;
+        }
+    img#instagram{
+        margin:10px;  
+        }
+    img#github{
+        margin:10px;
+        }
+    img#link{
+        margin:10px;
+        }
+    .close:hover,
+    .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    /* 100% Image Width on Smaller Screens */
+    @media only screen and (max-width: 700px){
+        .modal-content {
+            width: 100%;
+        }
+    }
+        </style>
+    
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+    
+    <body>
+
     <!-- Navigation: THIS SHOULD BE ADDED TO DEFAULT TEMPLATE -->
     <nav class="navbar fixed-top navbar-toggleable-md navbar-light" id="mainNav">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        
+        <div class = "navigationcontainer">
         <div class="container">
+            <!--
             <a class="navbar-brand" href="#page-top">
-                <img src = "https://raw.githubusercontent.com/BU-Spark/spark-website/master/img/sparklogo.png" style="width:42px;height:42px;border:0;">
+                     <img src = "https://raw.githubusercontent.com/BU-Spark/spark-website/master/img/sparklogo.png" style="width:130px;height:130px;border:0; margin: 0; position: absolute; top: 210%; left: 50%; margin-right: -50%; transform: translate(-50%, -50%); background: black;">
             </a>
-            <div class="collapse navbar-collapse" id="navbarExample">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Partners</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Team</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Resources</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">News/Events</a>
-                    </li>
-                </ul>
+            -->
+                <div class="collapse navbar-collapse" id="navbarExample">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="partners.html">Partners</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="team.html">Team</a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <img src="img/sparklogo.png" alt="HTML tutorial" style="width:130px;height:130px; margin-top: 30px;">
+                                </a>
+                            <!--border:0; margin: 0; position: absolute; top: 210%; left: 50%; margin-right: -50%; transform: translate(-50%, -50%);-->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="resources.html">Resources</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="calendar.html">News/Events</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
@@ -210,18 +326,18 @@
             </div>
         </div>
     </div>
-
+   <!--FOOTER-->
     <section id="contact">
         <div class = "contact">
         <div class="container">
             <div class="row">
                     <div class = "twitter">
-                        <img width="60px" height="60px" alt="twitter_icon" src="img/twitter_icon.png">
+                        <img width="60px" height="60px" alt="twitter_icon" src="img/twitter_icon.gif">
                     </div>
                     <div class = "verticalLine">
                     </div>
                     <div class = "facebook">
-                        <img width="60px" height="60px"  alt="facebook icon" src="img/facebook_icon.png">
+                        <img width="60px" height="60px"  alt="facebook icon" src="img/facebook_team_icon.gif" width = 100px height = 100px;>
                     </div>
             </div>
             
@@ -341,6 +457,9 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
+    
+    <!--Fiona Added-->
+    <script src="js/creative.js"></script>
 
 </body>
 </html>
